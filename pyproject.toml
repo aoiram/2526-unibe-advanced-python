@@ -1,0 +1,28 @@
+[project]
+name = "python-repo"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ma",email = "markus.anwander@sbb.ch"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy (>=2.4.1,<3.0.0)",
+    "pandas (>=3.0.0,<4.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "python_repo", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
