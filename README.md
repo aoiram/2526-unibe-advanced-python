@@ -150,11 +150,16 @@ Poetry (version 2.1.2)
 Navigate to the repository root:
 
 ```shell
-cd <REPO-NAME>
+cd python-data-science-2026
+```
+
+Ensure that the virtual environment is created inside the project folder
+
+```shell
+poetry config virtualenvs.in-project true  
 ```
 
 Install dependencies:
-
 ```shell
 poetry install
 ```
@@ -235,7 +240,7 @@ from utils.helpers import my_function
 ## Running Tests (if applicable)
 
 ```shell
-poetry run python -m pytest tests
+poetry run pytest  
 ```
 
 ---
