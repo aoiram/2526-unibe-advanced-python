@@ -147,6 +147,12 @@ Poetry (version 2.1.2)
 
 ## Step 4: Install the Repository
 
+Clone the git repository:
+
+```shell
+git clone https://gitlab.inf.unibe.ch/inf-public/lectures/python-data-science-2026.git
+```
+
 Navigate to the repository root:
 
 ```shell
