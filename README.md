@@ -176,77 +176,43 @@ Verify environment:
 poetry env info
 ```
 
----
-
-## Step 5: Install Data Science Packages and Jupyter
-
-```shell
-poetry add numpy pandas matplotlib
-poetry add jupyter ipykernel
-```
-
-Optional but common:
-
-```shell
-poetry add seaborn scikit-learn
-```
-
-Register the Poetry environment as a Jupyter kernel:
-
-```shell
-poetry run python -m ipykernel install \
-  --user \
-  --name poetry-notebooks \
-  --display-name "Python (poetry-notebooks)"
-```
-
----
-
-## Step 6: VS Code Setup
-
-Install extensions:
-
-- Python (Microsoft)
-- Jupyter (Microsoft)
-
-Open the project:
-
-```shell
-code .
-```
-
----
-
-## Step 7: Select Jupyter Kernel
-
-Open a notebook file (`.ipynb`) and select the kernel:
-
-**Python (poetry-notebooks)**
-
-Interpreter paths:
-
-- macOS / Linux: `.venv/bin/python`
-- Windows: `.venv\Scripts\python.exe`
-
----
-
-## Working with Notebooks
-
-- Notebooks are in `notebooks/`
-- Shared code is in `src/`
-
-Example import:
-
-```python
-from utils.helpers import my_function
-```
-
----
-
-## Running Tests (if applicable)
+Running dummy Tests (optional):
 
 ```shell
 poetry run pytest  
+```
+
+---
+
+## Step 5: VS Code Setup
+
+- Download and install **VS Code**  
+  https://code.visualstudio.com
+
+- Install the following extensions:
+  - **Python** (Microsoft)
+  - **Jupyter** (Microsoft)
+
+---
+
+## Step 6: Open Notebooks in VS Code
+
+Start VS Code
+
+* Open the folder python-data-science-2026
+* Open the notebook file `notebooks/00_environment_check.ipynb`
+* Click Run All
+
+VS Code will automatically:
+
+- use the Python environment in .venv
+- install the required VS Code extensions if they are missing
+- start Jupyter with the correct interpreter
+
+
+If VS Code asks for a Python interpreter, choose:
+```shell
+Python 3.11.10 (.venv)
 ```
 
 ---
@@ -255,8 +221,10 @@ poetry run pytest
 
 - Do not run `jupyter notebook` manually
 - VS Code manages the kernel
-- Do not use a global Python installation
-- Do not change the Python version
-- Always work inside the Poetry environment
-- Commit `poetry.lock` and `.python-version`
 
+
+## Help & Documentation
+
+- VS Code: https://code.visualstudio.com/docs
+- Git: https://git-scm.com/docs
+- Poetry: https://python-poetry.org/docs
