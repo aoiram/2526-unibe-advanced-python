@@ -63,11 +63,19 @@ Restart the terminal or run `exec $SHELL`.
 
 On Windows, use **pyenv-win**.
 
+**Option A:** Install via winget (if available)  
+
 ```powershell
 winget install pyenv-win
 ```
 
-Restart PowerShell.
+**Option B:** If winget is not available
+
+Use the official installation script:
+https://github.com/pyenv-win/pyenv-win/blob/master/docs/installation.md
+
+
+Restart PowerShell afterwards.
 
 Verify installation:
 
@@ -77,14 +85,16 @@ pyenv --version
 
 ---
 
-## Step 2: Install and Activate Python 3.11.10 (Local to the Repository)
+## Step 2: Install and Activate Python 3.11.9 (Local to the Repository)
 
 Navigate to the repository root and run:
 
 ```shell
-pyenv install 3.11.10
-pyenv local 3.11.10
+pyenv install 3.11.9
+pyenv local 3.11.9
 ```
+
+Hint:If version 3.11.9 is not available, any other 3.11.x version will work as well.
 
 This creates a `.python-version` file in the repository.
 The Python version is now scoped to this project only.
@@ -98,7 +108,7 @@ python --version
 Expected output:
 
 ```text
-Python 3.11.10
+Python 3.11.9
 ```
 
 ---
