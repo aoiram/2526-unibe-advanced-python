@@ -1,6 +1,6 @@
 # Notebook Repository with Poetry and VS Code
+This repository provides a beginner‑friendly environment for working with Jupyter notebooks in the context of the courses **Programming for Data Science** and **Introduction to Data Science with Python**.
 
-This repository provides a beginner‑friendly environment for working with Jupyter notebooks in the context of the course **Introduction to Data Science with Python**.
 A fully reproducible Python environment is managed with **Poetry** and used inside **VS Code**.
 The repository includes prepared Jupyter notebooks with examples and exercises to support learning and experimentation, which are updated and extended on a weekly basis throughout the course.
 
