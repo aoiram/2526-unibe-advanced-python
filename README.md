@@ -94,7 +94,7 @@ pyenv install 3.11.9
 pyenv local 3.11.9
 ```
 
-Hint:If version 3.11.9 is not available, any other 3.11.x version will work as well.
+*Hint:* If version 3.11.9 is not available, any other 3.11.x version will work as well.
 
 This creates a `.python-version` file in the repository.
 The Python version is now scoped to this project only.
