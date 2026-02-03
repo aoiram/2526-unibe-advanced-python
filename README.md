@@ -210,10 +210,7 @@ VS Code will automatically:
 - start Jupyter with the correct interpreter
 
 
-If VS Code asks for a Python interpreter, choose:
-```shell
-Python 3.11.10 (.venv)
-```
+If VS Code asks for a Python interpreter, choose: `Python 3.11.10 (.venv)`
 
 ---
 
