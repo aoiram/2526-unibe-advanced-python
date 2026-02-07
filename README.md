@@ -237,3 +237,9 @@ If VS Code asks for a Python interpreter, choose: `Python 3.11.10 (.venv)`
 - VS Code: https://code.visualstudio.com/docs
 - Git: https://git-scm.com/docs
 - Poetry: https://python-poetry.org/docs
+
+
+## License
+
+- Source code: MIT License  
+- Notebooks and course material: CC BY-NC 4.0
