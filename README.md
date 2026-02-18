@@ -212,7 +212,7 @@ poetry run pytest
 Start VS Code
 
 * Open the folder python-data-science-2026
-* Open the notebook file `notebooks/00_environment_check.ipynb`
+* Open the notebook file `notebooks/01_environment_check.ipynb`
 * Click Run All
 
 VS Code will automatically:
@@ -221,8 +221,11 @@ VS Code will automatically:
 - install the required VS Code extensions if they are missing
 - start Jupyter with the correct interpreter
 
+If VS Code asks for a Python interpreter, choose:  
+`.venv/bin/python (Python 3.11.10)`  
 
-If VS Code asks for a Python interpreter, choose: `Python 3.11.10 (.venv)`
+Or select it in the notebook (top right → Select Kernel → .venv (Python 3.11.10)).
+
 
 ---
 
