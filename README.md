@@ -234,12 +234,91 @@ Or select it in the notebook (top right → Select Kernel → .venv (Python 3.11
 - Do not run `jupyter notebook` manually
 - VS Code manages the kernel
 
+---
+
+
+## Update & Sync (Keeping Your Repository Up to Date)
+
+New Jupyter notebooks are added every week.  
+To get the latest course material, update your local repository as follows.
+
+---
+
+### 1. Check for Local Changes (Optional)
+
+```shell
+git status
+```
+
+If you have modified files, `git pull` may fail.  
+Merging Jupyter notebooks is not always straightforward and may lead to conflicts that are difficult to resolve.
+
+---
+
+### 2. Pull the Latest Version
+
+```shell
+git pull
+```
+
+This downloads the newest notebooks and updates from the server.
+
+---
+
+### 3. Update Dependencies
+
+If `pyproject.toml` or `poetry.lock` has changed:
+
+```shell
+poetry install
+```
+
+This synchronizes your virtual environment with the current project setup.
+
+---
+
+### 4. Handling Update Problems
+
+If `git pull` fails because of local changes:
+
+```text
+error: Your local changes to the following files would be overwritten
+```
+
+You can first try to resolve the merge conflicts manually.  
+If that is not possible, reset only the affected file to the official version and then pull again:
+
+```shell
+git checkout -- <file>
+# e.g. git checkout -- notebooks/03_numpy_part_A.ipynb
+git pull
+```
+
+Warning: This deletes all local modifications.
+
+---
+
+### Recommended Weekly Workflow
+
+Before starting new exercises:
+
+```shell
+git pull
+poetry install
+```
+
+Then open the new notebooks in VS Code.
+
+---
+
 
 ## Help & Documentation
 
 - VS Code: https://code.visualstudio.com/docs
 - Git: https://git-scm.com/docs
 - Poetry: https://python-poetry.org/docs
+
+---
 
 
 ## License
