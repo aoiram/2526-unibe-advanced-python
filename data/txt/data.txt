@@ -1,0 +1,3 @@
+Hello Python
+This is a simple text file.
+Learning file handling is important.
